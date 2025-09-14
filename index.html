@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kslt - URL Shortener</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="logo">kslt</h1>
+        <div class="shortener">
+            <input type="url" placeholder="Paste your URL here..." id="urlInput">
+            <button onclick="shortenUrl()" id="shortenBtn">Shorten</button>
+        </div>
+        <div class="result" id="result" style="display: none;">
+            <input type="text" id="shortUrl" readonly>
+            <button onclick="copyUrl()" id="copyBtn">Copy</button>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <a href="https://github.com/h73i/kslt" target="_blank">source</a>
+        <a href="https://github.com/h73i" target="_blank">github</a>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
