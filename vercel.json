@@ -8,8 +8,29 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/style.css",
+      "dest": "/style.css"
+    },
+    {
+      "src": "/script.js", 
+      "dest": "/script.js"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/([^/]+)",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/",
       "dest": "/server.js"
     }
-  ]
+  ],
+  "functions": {
+    "server.js": {
+      "includeFiles": "**"
+    }
+  }
 }
